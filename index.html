@@ -3,18 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="">
-		<title>Welcome to WorkedProfile</title>
+		<title>Selamat Datang di WorkedProfile</title>
 
-		<script type="text/javascript">
-			window.location.replace('profile.html');
-		</script>
-
-		<link href="styles/bootstrap.css" rel="stylesheet">
-		<link href="styles/ionicons.min.css" rel="stylesheet">
+		<link href="styles/bootstrap.min.css" rel="stylesheet">
+		<link href="styles/bootstrap-plugins.min.css" rel="stylesheet">
 		<link href="styles/bootstrap-extended.css" rel="stylesheet">
 
 		<!-- [if lt IE 9]>
@@ -22,13 +18,40 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif] -->
 
-		<link rel="apple-touch-icon" href="images/brand.png">
-		<link rel="icon" href="images/brand.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="icon" href="images/favicon.ico">
 	</head>
-	<body>
+	<body class="bg-body" style="background-image: url(images/bg/bg.jpg);">
+
+		<main class="main-cover">
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2 col-md-4"></div>
+						<div class="col-sm-8 col-md-4">
+							<div class="content-main">
+								<div class="img-stand">
+									<img src="images/brand-main.png" class="img-responsive center-block">
+								</div>
+								<h2 class="title">Find professional, project, job and business</h2>
+								<div class="acts">
+									<a href="signin.html" class="btn btn-lg btn-block btn-ghost">Masuk</a>
+									<a href="signup.html" class="btn btn-lg btn-block btn-ghost">Daftar</a>
+								</div>
+								<a href="professionals.html" class="text-center">
+									<p>Lewati</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-2 col-md-4"></div>
+					</div>
+				</div>
+			</div>
+		</main>
 
 		<script src="scripts/jquery-2.1.4.min.js"></script>
 		<script src="scripts/bootstrap.min.js"></script>
+		<script src="scripts/bootstrap-plugins.min.js"></script>
 		<script src="scripts/bootstrap-extended.js"></script>
 	</body>
 </html>
