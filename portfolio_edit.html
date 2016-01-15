@@ -7,7 +7,7 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="">
-		<title>Lupa Sandi</title>
+		<title>Edit Portfolio</title>
 
 		<link href="styles/bootstrap.css" rel="stylesheet">
 		<link href="styles/plugins/cropper.css" rel="stylesheet">
@@ -37,7 +37,7 @@
 							</a>
 						</div>
 						<div class="col-xs-8">
-							<h4 class="title">Lupa Sandi</h4>
+							<h4 class="title">Edit Portfolio</h4>
 						</div>
 						<div class="col-xs-2"></div>
 					</div>
@@ -47,24 +47,41 @@
 
 		<main>
 			<div class="section">
-				<div class="container">
+				<div class="container container-full-xs">
 					<div class="row">
-						<div class="col-sm-2 col-md-4"></div>
-						<div class="col-sm-8 col-md-4">
-							<form class="form-simple" name="forgot-password">
-								<div class="form-group">
-									<p class="help-block">Masukan Email Anda</p>
+						<div class="col-xs-12">
+							<div class="cropper-sample">
+								<div class="crop-bind">
+									<div class="crop-main">
+										<div class="crop-container">
+											<img class="crop-img" src="images/default-portfolio.png" alt="Picture">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<form class="form-simple crop-form">
+								<div class="form-group form-group-lg">
+									<label class="sr-only" for="caption">Caption</label>
+									<input type="text" class="form-control" id="caption" placeholder="Caption" value="Take A Shot">
 								</div>
 								<div class="form-group form-group-lg">
-									<label for="email" class="sr-only">Email</label>
-									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<button type="submit" class="btn btn-lg btn-block btn-default btn-gloom">Kirim</button>
+									<label class="sr-only" for="caption">Description</label>
+									<textarea class="form-control" id="description" placeholder="Description" rows="3" maxlength="100">Click Click Click</textarea>
 								</div>
 							</form>
 						</div>
-						<div class="col-sm-2 col-md-4"></div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="crop-acts">
+								<button class="btn btn-lg btn-default btn-gloom cropper-delete"><span class="icon ion-ios-minus-empty"></span>Delete</button>
+								<button class="btn btn-lg btn-default btn-gloom cropper-update"><span class="icon ion-ios-checkmark-empty"></span>Update</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
